@@ -17,7 +17,7 @@ public class TestCiCd {
         @Test
         public void testMultiply(){
             Calculator calc = new Calculator();
-            assertEquals(calc.multiply(6, 5), 24);
+            assertEquals(calc.multiply(6, 5), 30);
         }
 
         @Test(expectedExceptions = ArithmeticException.class)
