@@ -8,6 +8,18 @@ public class TestCiCd {
             assertEquals(calc.add(5, 3), 8);
         }
 
+        @Test
+        public void testSubtract(){
+            Calculator calc = new Calculator();
+            assertEquals(calc.subtract(5, 2), 3);
+        }
+
+        @Test
+        public void testMultiply(){
+            Calculator calc = new Calculator();
+            assertEquals(calc.multiply(6, 5), 24);
+        }
+
         @Test(expectedExceptions = ArithmeticException.class)
         public void testDivideByZero() {
             Calculator calc = new Calculator();
